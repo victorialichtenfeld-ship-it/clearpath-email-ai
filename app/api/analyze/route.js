@@ -1,11 +1,12 @@
 import { getServerSession } from "next-auth";
+import { authOptions } from "../auth/authOptions";
 import { google } from "googleapis";
 import Anthropic from "@anthropic-ai/sdk";
 
 const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
 export async function POST(req) {
-  const session = await getServerSession();
+  const session = await getServerSession(authOptions);
   if (!session?.accessToken) {
     return Response.json({ error: "Not authenticated" }, { status: 401 });
   }
@@ -46,7 +47,7 @@ export async function POST(req) {
     .join("\n\n---\n\n");
 
   const response = await anthropic.messages.create({
-    model: "claude-sonnet-4-6",
+    model: "claude-haiku-4-5",
     max_tokens: 2000,
     system: `You are an AI assistant specialized for real estate agents. You analyze their emails to help them close more deals and never miss a hot lead.
 
