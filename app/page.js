@@ -18,7 +18,7 @@ export default function Home() {
         <div style={styles.badge}>AI FOR REAL ESTATE</div>
         <h1 style={styles.h1}>Never Miss a Hot Lead Again.</h1>
         <p style={styles.sub}>
-          V&M AI Agency scans your inbox and tells you exactly who is ready to buy or sell —
+          V&S AI Agency scans your inbox and tells you exactly who is ready to buy or sell —
           and what to say to close them.
         </p>
         <div style={styles.features}>
@@ -63,7 +63,7 @@ export default function Home() {
       <div style={styles.social}>
         <blockquote style={styles.quote}>
           "I was about to lose a $2.1M listing because the client emailed me and I missed it.
-          V&M AI flagged it as urgent. Closed the deal that same day."
+          V&S AI flagged it as urgent. Closed the deal that same day."
         </blockquote>
         <cite style={styles.cite}>— Real estate agent, Miami FL</cite>
       </div>

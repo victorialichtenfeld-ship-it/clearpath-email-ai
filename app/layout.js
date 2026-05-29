@@ -1,7 +1,7 @@
 import { SessionProvider } from "./components/SessionProvider";
 
 export const metadata = {
-  title: "V&M AI Agency — Email Assistant for Real Estate",
+  title: "V&S AI Agency — Email Assistant for Real Estate",
   description: "Never miss a hot lead. AI scans your inbox and tells you exactly who is ready to buy or sell.",
 };
 

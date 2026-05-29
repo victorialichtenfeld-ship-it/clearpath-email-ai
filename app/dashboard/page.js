@@ -37,7 +37,7 @@ export default function Dashboard() {
   return (
     <div style={styles.page}>
       <header style={styles.header}>
-        <div style={styles.logo}>V&M AI AGENCY</div>
+        <div style={styles.logo}>V&S AI AGENCY</div>
         <div style={styles.headerRight}>
           <span style={styles.userEmail}>{session?.user?.email}</span>
           <button style={styles.signOut} onClick={() => signOut()}>Sign out</button>
@@ -55,7 +55,7 @@ export default function Dashboard() {
             <div style={styles.scanIcon}>📬</div>
             <h2 style={styles.scanTitle}>Ready to scan your inbox</h2>
             <p style={styles.scanSub}>
-              V&M AI will read your last 20 emails and identify hot leads,
+              V&S AI will read your last 20 emails and identify hot leads,
               urgent messages, and draft your most important reply.
             </p>
             <button
